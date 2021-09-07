@@ -28,9 +28,15 @@ export class HelloWorld extends LitElement {
     this.counter += 1;
   }
 
-  __deincrement() {
+  __decrement() {
     if(this.counter > 0) {
       this.counter -= 1;
+    }
+  }
+
+  __colorChange() {
+    if(this.counter = 10) {
+      color = "#FF0000";
     }
   }
 
@@ -39,7 +45,7 @@ export class HelloWorld extends LitElement {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
-      <button @click=${this.__deincrement}>deincrement</button>
+      <button @click=${this.__deincrement}>decrement</button>
       <input type="number" value="${this.counter}">
     `;
 

@@ -34,11 +34,6 @@ export class HelloWorld extends LitElement {
     }
   }
 
-  __colorChange() {
-    if(this.counter = 10) {
-      color = "#FF0000";
-    }
-  }
 
 
   render() {
